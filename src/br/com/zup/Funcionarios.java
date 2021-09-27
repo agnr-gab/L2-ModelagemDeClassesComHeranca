@@ -58,15 +58,24 @@ public class Funcionarios {
     public void setSalario(double salario) {
         this.salario = salario;
     }
-    public double aumentaSalario(){
-        return salario * 0.1;
+
+    public double aumentaSalario() {
+        double salarioAumento = (getSalario() * 0.1) + getSalario();
+        return salarioAumento;
     }
-    public void mostrarDados(){
-        System.out.println("Nome: " +getNome());
-        System.out.println("CPF: " +getCpf());
-        System.out.println("Número de Registro: "+getNumeroRegistro());
-        System.out.println("Órgão de Lotação: "+getOrgaoLotacao());
-        System.out.println("Salário: R$ "+getSalario());
+
+    public void mostrarDados() {
+        System.out.println("Nome: " + getNome());
+        System.out.println("CPF: " + getCpf());
+        System.out.println("Número de Registro: " + getNumeroRegistro());
+        System.out.println("Órgão de Lotação: " + getOrgaoLotacao());
+        System.out.println("Salário: R$ " + getSalario());
         System.out.println("===========================================");
+    }
+
+    public void mostrarAumento() {
+        System.out.println("Sálario atual: R$" + getSalario() + " reais");
+        System.out.println("Valor do aumento: R$" + (getSalario() * 0.1) + " reais");
+        System.out.println("Salário + aumento: R$" + (getSalario() * 0.1 + getSalario()));
     }
 }
