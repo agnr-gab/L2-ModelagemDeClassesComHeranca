@@ -6,9 +6,8 @@ import java.util.List;
 public class Coordenadores extends Funcionarios {
     private List<Professores> professoresSupervisionados = new ArrayList<>();
 
-    public Coordenadores(String nome, String cpf, String numeroRegistro, String orgaoLotacao, double salario, List<Professores> professoresSupervisionados) {
+    public Coordenadores(String nome, String cpf, String numeroRegistro, String orgaoLotacao, double salario) {
         super(nome, cpf, numeroRegistro, orgaoLotacao, salario);
-        this.professoresSupervisionados = professoresSupervisionados;
     }
 
     public void adicionarProfessor(Professores prof) {
@@ -17,7 +16,7 @@ public class Coordenadores extends Funcionarios {
 
     public void exibirProfessoresSupervisionados() {
         for (Professores referencia : professoresSupervisionados) {
-            System.out.println("O nome do professor é: " + referencia.getNome());
+            System.out.println("Professor: " + referencia.getNome());
         }
     }
 
