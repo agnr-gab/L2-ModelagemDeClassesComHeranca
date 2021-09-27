@@ -67,5 +67,6 @@ public class Funcionarios {
         System.out.println("Número de Registro: "+getNumeroRegistro());
         System.out.println("Órgão de Lotação: "+getOrgaoLotacao());
         System.out.println("Salário: R$ "+getSalario());
+        System.out.println("===========================================");
     }
 }
