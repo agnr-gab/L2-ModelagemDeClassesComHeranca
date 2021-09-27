@@ -23,4 +23,9 @@ public class Coordenadores extends Funcionarios {
     public void removerProfessor(Professores prof) {
         professoresSupervisionados.remove(prof);
     }
+    @Override
+    public double aumentaSalario(){
+       double aumentoSalarioCoord = getSalario() * 0.05;
+       return aumentoSalarioCoord;
+    }
 }
