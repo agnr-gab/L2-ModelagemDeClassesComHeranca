@@ -14,5 +14,9 @@ public class Main {
         coord1.adicionarProfessor(prof2);
         System.out.println("___Lista de professores supervisionados___ " );
         coord1.exibirProfessoresSupervisionados();
+
+        System.out.println(prof1.getSalario());
+        prof1.aumentaSalario();
+        System.out.println(prof1.getSalario());
     }
 }
