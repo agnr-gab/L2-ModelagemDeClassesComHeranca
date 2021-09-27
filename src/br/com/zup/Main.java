@@ -12,11 +12,11 @@ public class Main {
         prof2.mostrarDados();
         coord1.adicionarProfessor(prof1);
         coord1.adicionarProfessor(prof2);
-        System.out.println("___Lista de professores supervisionados___ " );
+        System.out.println("___Lista de professores supervisionados___ ");
         coord1.exibirProfessoresSupervisionados();
 
-        System.out.println(prof1.getSalario());
+
         prof1.aumentaSalario();
-        System.out.println(prof1.getSalario());
+        prof1.mostrarAumento();
     }
 }
