@@ -61,4 +61,11 @@ public class Funcionarios {
     public double aumentaSalario(){
         return salario * 0.1;
     }
+    public void mostrarDados(){
+        System.out.println("Nome: " +getNome());
+        System.out.println("CPF: " +getCpf());
+        System.out.println("Número de Registro: "+getNumeroRegistro());
+        System.out.println("Órgão de Lotação: "+getOrgaoLotacao());
+        System.out.println("Salário: R$ "+getSalario());
+    }
 }
