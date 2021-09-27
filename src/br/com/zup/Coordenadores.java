@@ -25,7 +25,7 @@ public class Coordenadores extends Funcionarios {
     }
     @Override
     public double aumentaSalario(){
-       double aumentoSalarioCoord = getSalario() * 0.05;
-       return aumentoSalarioCoord;
+        double salarioAumento = (getSalario() * 0.05) + getSalario();
+        return salarioAumento;
     }
 }
